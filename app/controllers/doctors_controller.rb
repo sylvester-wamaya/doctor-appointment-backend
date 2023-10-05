@@ -1,11 +1,11 @@
 class DoctorsController < ApplicationController
-  before_action :set_doctor, only: %i[ show update destroy ]
+  before_action :set_doctor, only: %i[show update destroy]
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
 
   # GET /doctors
   def index
-    render json: Doctor.all, status: :ok    
+    render json: Doctor.all, status: :ok
   end
 
   # GET /doctors/1
@@ -40,22 +40,24 @@ class DoctorsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_doctor
-      @doctor = Doctor.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def doctor_params
-      params.require(:doctor).permit(:name, :photo, :specialization, :consultation_fee, :prescription_fee)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_doctor
+    @doctor = Doctor.find(params[:id])
+  end
 
-    # Error handling
-    def record_not_found
-      render json: { error: 'Doctor not found' }, status: :not_found
-    end
-    # Error handling
-    def record_invalid
-      render json: { error: 'Invalid doctor data' }, status: :unprocessable_entity
-    end
+  # Only allow a list of trusted parameters through.
+  def doctor_params
+    params.require(:doctor).permit(:name, :photo, :specialization, :consultation_fee, :prescription_fee)
+  end
+
+  # Error handling
+  def record_not_found
+    render json: { error: 'Doctor not found' }, status: :not_found
+  end
+
+  # Error handling
+  def record_invalid
+    render json: { error: 'Invalid doctor data' }, status: :unprocessable_entity
+  end
 end
