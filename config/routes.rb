@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   resources :doctors
-  resources :users, only: [:index, :show, :create, :update, :destroy]
+  resources :users
+  resources :appointments
+  
   root "users#index"
 end
