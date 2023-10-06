@@ -1,6 +1,6 @@
 class Doctor < ApplicationRecord
   has_many :appointments
-  has_many :users, through: :appointments
+  belongs_to :user
 
   validates :name, presence: true, length: { minimum: 3, maximum: 50 }
   validates :specialization, presence: true, length: { minimum: 3, maximum: 50 }
