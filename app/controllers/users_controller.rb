@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    render json: @user
+    render json: @user, include: { doctors: { include: :appointments } }, status: :ok
   end
 
   def create
