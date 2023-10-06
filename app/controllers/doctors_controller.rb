@@ -5,12 +5,12 @@ class DoctorsController < ApplicationController
 
   # GET /doctors
   def index
-    render json: Doctor.all, status: :ok
+    render json: Doctor.all, include: {users: {include: :appointments}}, status: :ok
   end
 
   # GET /doctors/1
   def show
-    render json: @doctor, status: :ok
+    render json: @doctor, include: {users: {include: :appointments}}, status: :ok
   end
 
   # POST /doctors
