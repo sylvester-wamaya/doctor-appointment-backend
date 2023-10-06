@@ -1,12 +1,11 @@
 class AppointmentsController < ApplicationController
   def index
-    render json: Appointment.all, include: {user: {include: :doctors}}
-    
+    render json: Appointment.all, include: { user: { include: :doctors } }
   end
 
   def show
     @appointment = Appointment.find(params[:id])
-    render json: @appointment, include: {user: {include: :doctors}}
+    render json: @appointment, include: { user: { include: :doctors } }
   end
 
   def create
