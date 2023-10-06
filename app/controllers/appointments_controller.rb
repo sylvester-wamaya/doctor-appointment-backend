@@ -21,7 +21,7 @@ class AppointmentsController < ApplicationController
 
   def update
     @appointment = Appointment.find(params[:id])
-    
+
     if @appointment.update(appointment_params)
       render json: @appointment
     else
