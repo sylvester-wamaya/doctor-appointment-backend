@@ -34,4 +34,10 @@ class AppointmentsController < ApplicationController
     @appointment.destroy
     head :no_content
   end
+
+  private
+
+  def appointment_params
+    params.require(:appointment).permit(:doctor_id, :user_id)
+  end
 end
