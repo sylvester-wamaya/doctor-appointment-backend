@@ -5,7 +5,6 @@ class CreateDoctors < ActiveRecord::Migration[7.0]
       t.string :specialization
       t.integer :consultation_fee
       t.integer :prescription_fee
-      t.references :user, null: false, foreign_key: { to_table: :users }
 
       t.timestamps
     end
