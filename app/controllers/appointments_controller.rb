@@ -1,12 +1,12 @@
 class AppointmentsController < ApplicationController
   def index
-    @appointments = Appointment.all
-    render json: @appointments
+    render json: Appointment.all, include: {user: {include: :doctors}}
+    
   end
 
   def show
     @appointment = Appointment.find(params[:id])
-    render json: @appointment
+    render json: @appointment, include: {user: {include: :doctors}}
   end
 
   def create
@@ -38,6 +38,6 @@ class AppointmentsController < ApplicationController
   private
 
   def appointment_params
-    params.require(:appointment).permit(:doctor_id, :user_id)
+    params.require(:appointment).permit(:doctor_id, :user_id, :location, :date)
   end
 end
