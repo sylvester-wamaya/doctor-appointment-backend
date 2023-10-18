@@ -218,3 +218,20 @@ Example of a response body:
 	"user_id": 20
 }
 ```
+
+- **DELETE** to delete a doctor from the list of doctors.
+
+URL parameters:
+
+- **doctorId**: unique identifier of the doctor (mandatory)
+
+Example URL: https://rails-j4lh.onrender.com/doctors/{doctorId}
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
+}
+```
