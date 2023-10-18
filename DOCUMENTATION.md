@@ -109,7 +109,7 @@ const token = response.headers.get('Authorization')
 Example of response body:
 ```
 {
- 	"status": {
+  "status": {
     "code": 200,
     "message": "Login successful."
   },
@@ -224,7 +224,8 @@ URL parameters:
 
 - **doctorId**: unique identifier of the doctor (mandatory)
 
-Example URL: https://rails-j4lh.onrender.com/doctors/{doctorId}
+**Endpoint URL:**  
+`DELETE` https://rails-j4lh.onrender.com/doctors/{doctorId}
 
 **Request Headers:**
 
@@ -313,7 +314,8 @@ URL parameters:
 
 - **appointmentId**: unique identifier of the appointment (mandatory)
 
-Example URL: https://rails-j4lh.onrender.com/appointments/{appointmentId}
+**Endpoint URL:**  
+`DELETE` https://rails-j4lh.onrender.com/appointments/{appointmentId}
 
 **Request Headers:**
 
