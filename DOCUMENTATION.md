@@ -204,3 +204,17 @@ Example of a request body:
 	
 }
 ```
+
+Example of a response body:
+
+```
+{
+	"id": "generated id",
+	"name": "Clinton Younge",
+	"specialization": "Programming",
+	"consultation_fee": 25,
+        "prescription_fee": 20,
+	"photo": "url-for-a-photo",
+	"user_id": 20
+}
+```
