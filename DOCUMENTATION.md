@@ -180,3 +180,27 @@ Example of response body: (an array of doctors)
   // Additional doctors
 ]
 ```
+
+- **POST** to add a new doctor to the list of doctors.
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
+}
+```
+
+Example of a request body:
+```
+{
+	"name": "Dr. John Doe",
+    	"specialtization": "Cardiologist",
+	"consultation_fee": 25,
+        "prescription_fee": 20,
+	"photo": "url-for-a-photo",
+	"user_id": 20
+	
+}
+```
