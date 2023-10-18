@@ -64,3 +64,13 @@ Example of response body:
   }
 }
 ```
+
+**/login/**
+
+This endpoint allows an existing user to log in and obtain an authentication token for accessing secured resources.
+
+**Endpoint URL:**  
+`POST` https://rails-j4lh.onrender.com/login
+
+**Allowed actions:**
+- **POST** to log in an existing user.
