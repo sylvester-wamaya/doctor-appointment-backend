@@ -235,3 +235,11 @@ headers: {
   'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
 }
 ```
+
+Example of Response Body:
+
+```
+{
+  "message": "Doctor with ID {doctorId} has been deleted successfully."
+}	
+```
