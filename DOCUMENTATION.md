@@ -74,3 +74,21 @@ This endpoint allows an existing user to log in and obtain an authentication tok
 
 **Allowed actions:**
 - **POST** to log in an existing user.
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+}
+```
+
+Request **body**: a JSON object
+
+Example of request body:
+```
+{
+	"email": "cj@gmail.com"
+	"password": "password"
+}
+```
