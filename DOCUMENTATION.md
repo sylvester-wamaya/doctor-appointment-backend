@@ -295,3 +295,15 @@ Example of a request body:
       	"doctor_id": 21,
 }
 ```
+
+Example of a response body:
+
+```
+{
+	"id": "generated id",
+	"location": "GT",
+      	"date": "2023-10-20",
+      	"user_id": 20,
+      	"doctor_id": 21
+}
+```	
