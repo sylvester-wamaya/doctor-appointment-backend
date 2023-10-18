@@ -131,3 +131,20 @@ This endpoint allows a logged-in user to log out and invalidate their authentica
 **Allowed actions:**
 - **DELETE** to log out the currently authenticated user.
 
+**Request Headers:**
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token'
+}
+```
+
+Example of response body:
+```
+{
+  "status": {
+    "code": 200,
+    "message": "Logout successful."
+  }
+}
+```
