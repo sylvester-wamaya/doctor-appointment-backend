@@ -120,3 +120,14 @@ Example of response body:
   	}
 }
 ```
+
+**/logout/**
+
+This endpoint allows a logged-in user to log out and invalidate their authentication token.
+
+**Endpoint URL:**  
+`DELETE` https://rails-j4lh.onrender.com/logout
+
+**Allowed actions:**
+- **DELETE** to log out the currently authenticated user.
+
