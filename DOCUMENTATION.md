@@ -274,3 +274,24 @@ Example of response body: (an array of appointments)
   // Additional appointments
 ]
 ```
+
+- **POST** to add a new appointment to the list of appointments.
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
+}
+```
+
+Example of a request body:
+```
+{
+	"location": "GT",
+      	"date": "2023-10-20",
+      	"user_id": 20,
+      	"doctor_id": 21,
+}
+```
