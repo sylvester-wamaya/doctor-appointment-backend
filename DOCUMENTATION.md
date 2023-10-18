@@ -307,3 +307,20 @@ Example of a response body:
       	"doctor_id": 21
 }
 ```	
+
+- **DELETE** to delete a doctor from the list of doctors.
+
+URL parameters:
+
+- **appointmentId**: unique identifier of the appointment (mandatory)
+
+Example URL: https://rails-j4lh.onrender.com/appointments/{appointmentId}
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
+}
+```
