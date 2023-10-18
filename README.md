@@ -35,7 +35,9 @@
 </details>
 
 <summary>
-  <h2>(Front End of Project)[https://github.com/benja27/Doctor-Appoinments---Front-End]
+  <a href="https://github.com/benja27/Doctor-Appoinments---Front-End">
+    <h3>Front End of Project</h3>
+  </a>
 </summary>
 
 
