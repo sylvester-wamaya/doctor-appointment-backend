@@ -30,22 +30,22 @@ Request **body**: a JSON object
 Example of request body:
 ```
 {
-	"name": "Clinton Younge"
-	"email": "cj@gmail.com"
-	"password": "password"
+  "name": "Clinton Younge"
+  "email": "cj@gmail.com"
+  "password": "password"
 }
 ```
 
 Example of response header (to get the token)
 ```
 {
-	headers: {
-		"Authorization": "Bearer ey...a-bunch-of-random-letters-and-numbers-way-longer-than-this...4dfgdfg"
-	}
+  headers: {
+    "Authorization": "Bearer ey...a-bunch-of-random-letters-and-numbers-way-longer-than-this...4dfgdfg"
+  }
 }
 ```
 
-To get the authentication token from the response header-
+To get the authentication token from the response header:
 ```
 const token = response.headers.get('Authorization')
 ```
@@ -88,17 +88,17 @@ Request **body**: a JSON object
 Example of request body:
 ```
 {
-	"email": "cj@gmail.com"
-	"password": "password"
+  "email": "cj@gmail.com"
+  "password": "password"
 }
 ```
 
 Example of request response header (to get the token)
 ```
 {
-	headers: {
-		"Authorization": "Bearer ey...a-bunch-of-random-letters-and-numbers-way-longer-than-this...4dfgdfg"
-	}
+  headers: {
+    "Authorization": "Bearer ey...a-bunch-of-random-letters-and-numbers-way-longer-than-this...4dfgdfg"
+  }
 }
 ```
 
@@ -110,14 +110,14 @@ Example of response body:
 ```
 {
  	"status": {
-      "code": 200,
-      "message": "Login successful."
-  	},
-  	"data": {
-      "id": 1,
-      "email": "cj@gmail.com",
-      "name": "Clinton Younge"
-  	}
+    "code": 200,
+    "message": "Login successful."
+  },
+  "data": {
+    "id": 1,
+    "email": "cj@gmail.com",
+    "name": "Clinton Younge"
+  }
 }
 ```
 
@@ -195,12 +195,12 @@ headers: {
 Example of a request body:
 ```
 {
-	"name": "Dr. John Doe",
+  "name": "Dr. John Doe",
   "specialtization": "Cardiologist",
-	"consultation_fee": 25,
+  "consultation_fee": 25,
   "prescription_fee": 20,
-	"photo": "url-for-a-photo",
-	"user_id": 20
+  "photo": "url-for-a-photo",
+  "user_id": 20
 }
 ```
 
@@ -208,13 +208,13 @@ Example of a response body:
 
 ```
 {
-	"id": "generated id",
-	"name": "Clinton Younge",
-	"specialization": "Programming",
-	"consultation_fee": 25,
+  "id": "generated id",
+  "name": "Clinton Younge",
+  "specialization": "Programming",
+  "consultation_fee": 25,
   "prescription_fee": 20,
-	"photo": "url-for-a-photo",
-	"user_id": 20
+  "photo": "url-for-a-photo",
+  "user_id": 20
 }
 ```
 
@@ -288,10 +288,10 @@ headers: {
 Example of a request body:
 ```
 {
-	"location": "GT",
+  "location": "GT",
   "date": "2023-10-20",
   "user_id": 20,
-  "doctor_id": 21,
+  "doctor_id": 21
 }
 ```
 
@@ -299,8 +299,8 @@ Example of a response body:
 
 ```
 {
-	"id": "generated id",
-	"location": "GT",
+  "id": "generated id",
+  "location": "GT",
   "date": "2023-10-20",
   "user_id": 20,
   "doctor_id": 21
