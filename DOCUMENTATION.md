@@ -35,3 +35,27 @@ Example of request body:
 	"password": "password"
 }
 ```
+
+Example of response header (to get the token)
+```
+{
+	headers: {
+		"Authorization": "Bearer ey...a-bunch-of-random-letters-and-numbers-way-longer-than-this...4dfgdfg"
+	}
+}
+```
+
+Example of response body:
+```
+{
+  "status": {
+    "code": 200,
+    "message": "Signed up successfully."
+  },
+  "data": {
+    "id": 1,
+    "email": "cj@gmail.com",
+    "name": "Clinton Younge"
+  }
+}
+```
