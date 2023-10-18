@@ -45,6 +45,11 @@ Example of response header (to get the token)
 }
 ```
 
+To get the authentication token from the response header-
+```
+const token = response.headers.get('Authorization')
+```
+
 Example of response body:
 ```
 {
