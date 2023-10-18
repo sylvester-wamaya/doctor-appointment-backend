@@ -324,3 +324,11 @@ headers: {
   'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
 }
 ```
+
+Example of Response Body:
+
+```
+{
+  "message": "Appointment with ID {appointmentId} has been deleted successfully."
+}	
+```
