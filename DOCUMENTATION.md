@@ -165,3 +165,18 @@ headers: {
   'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
 }
 ```
+
+Example of response body: (an array of doctors)
+```
+[
+  {
+    "id": 1,
+    "name": "Dr. John Doe",
+    "specialtization": "Cardiologist",
+    "consultation_fee": 25,
+    "prescription_fee": 20,
+    "user_id": 20
+  },
+  // Additional doctors
+]
+```
