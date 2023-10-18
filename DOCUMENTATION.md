@@ -243,3 +243,20 @@ Example of Response Body:
   "message": "Doctor with ID {doctorId} has been deleted successfully."
 }	
 ```
+
+#### **/appointments/**
+
+- **URL**: https://rails-j4lh.onrender.com/appointments
+
+**Allowed actions:**
+
+- **GET** to retrieve a list of appointments or a specific appointment.
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
+}
+```
