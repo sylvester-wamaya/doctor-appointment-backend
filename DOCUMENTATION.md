@@ -110,13 +110,13 @@ Example of response body:
 ```
 {
  	"status": {
-    		"code": 200,
-    		"message": "Login successful."
+      "code": 200,
+      "message": "Login successful."
   	},
   	"data": {
-    		"id": 1,
-    		"email": "cj@gmail.com",
-    		"name": "Clinton Younge"
+      "id": 1,
+      "email": "cj@gmail.com",
+      "name": "Clinton Younge"
   	}
 }
 ```
@@ -196,12 +196,11 @@ Example of a request body:
 ```
 {
 	"name": "Dr. John Doe",
-    	"specialtization": "Cardiologist",
+  "specialtization": "Cardiologist",
 	"consultation_fee": 25,
-        "prescription_fee": 20,
+  "prescription_fee": 20,
 	"photo": "url-for-a-photo",
 	"user_id": 20
-	
 }
 ```
 
@@ -213,7 +212,7 @@ Example of a response body:
 	"name": "Clinton Younge",
 	"specialization": "Programming",
 	"consultation_fee": 25,
-        "prescription_fee": 20,
+  "prescription_fee": 20,
 	"photo": "url-for-a-photo",
 	"user_id": 20
 }
@@ -290,9 +289,9 @@ Example of a request body:
 ```
 {
 	"location": "GT",
-      	"date": "2023-10-20",
-      	"user_id": 20,
-      	"doctor_id": 21,
+  "date": "2023-10-20",
+  "user_id": 20,
+  "doctor_id": 21,
 }
 ```
 
@@ -302,9 +301,9 @@ Example of a response body:
 {
 	"id": "generated id",
 	"location": "GT",
-      	"date": "2023-10-20",
-      	"user_id": 20,
-      	"doctor_id": 21
+  "date": "2023-10-20",
+  "user_id": 20,
+  "doctor_id": 21
 }
 ```	
 
