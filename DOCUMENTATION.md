@@ -148,3 +148,20 @@ Example of response body:
   }
 }
 ```
+
+#### **/doctors/**
+
+- **URL**: https://rails-j4lh.onrender.com/doctors
+
+**Allowed actions:**
+
+- **GET** to retrieve a list of doctors or a specific doctor.
+
+**Request Headers:**
+
+```
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
+}
+```
