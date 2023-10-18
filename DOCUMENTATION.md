@@ -260,3 +260,17 @@ headers: {
   'Authorization': 'Bearer your-authentication-token-which-could-be-stored-locally-or-in-session-storage'
 }
 ```
+
+Example of response body: (an array of appointments)
+```
+[
+  {
+    "id": "generated id",
+    "date": "2023-10-20",
+    "location": "GT"
+    "user_id": 20,
+    "doctor_id" 21
+  },
+  // Additional appointments
+]
+```
