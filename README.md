@@ -130,6 +130,17 @@ Run the `rspec` command in your console to run the tests.
 
 - GitHub: [@githubhandle](https://github.com/sylvester-wamaya)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sylvester-wamaya-b11a93112/)
+
+👤 **Mariano Benjamin**
+
+- GitHub: [@githubhandle](https://github.com/benja27)
+- LinkedIn: [LinkedIn](http://www.linkedin.com/in/BenjaMendez2699)
+
+👤 **Adeyemi Olusola**
+
+- GitHub: [@emarkees](https://github.com/emarkees)
+- LinkedIn: [LinkedIn](http://www.linkedin.com/in/adeyemi-olusola)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
