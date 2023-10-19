@@ -30,7 +30,7 @@ class AppointmentsController < ApplicationController
 
   def destroy
     @appointment = Appointment.find_by(id: params[:id])
-    
+
     if @appointment
       @appointment.destroy
       render json: @appointment, status: :accepted
@@ -38,7 +38,7 @@ class AppointmentsController < ApplicationController
       render json: { error: 'Appointment not found' }, status: :not_found
     end
   end
-  
+
   private
 
   def appointment_params
