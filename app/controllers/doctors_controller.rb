@@ -35,7 +35,10 @@ class DoctorsController < ApplicationController
 
   # DELETE /doctors/1
   def destroy
-    @doctor.destroy
+    if @doctor.destroy
+      render json: @doctor, status: :accepted
+    else
+      render json: @doctor.errors, status: :unprocessable_entity
     head :no_content
   end
 
