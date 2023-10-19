@@ -87,6 +87,13 @@ Install this project with:
 - Navigate to config/database.yml
 - Update the user and password to match your postgresql user and password.
 
+## Generate Devise secret Key
+- Remove config/master.key and config/credentials.yml.enc if they exist.
+- Run `rails secret`.  Copy the key.
+- Run EDITOR="code --wait" bin/rails credentials:edit
+- In the editor that opens, add this:  devise_jwt_secret_key: <the key you copied in step 2>
+- Save the file and close the editor.  New master.key, credentials.yml.enc files will be generated, and the key will be stored in `Rails.application.credentials.devise_jwt_secret_key`.
+
 ### Create database and migrate
 Run the following code-
 
@@ -123,6 +130,17 @@ Run the `rspec` command in your console to run the tests.
 
 - GitHub: [@githubhandle](https://github.com/sylvester-wamaya)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sylvester-wamaya-b11a93112/)
+
+👤 **Mariano Benjamin**
+
+- GitHub: [@githubhandle](https://github.com/benja27)
+- LinkedIn: [LinkedIn](http://www.linkedin.com/in/BenjaMendez2699)
+
+👤 **Adeyemi Olusola**
+
+- GitHub: [@emarkees](https://github.com/emarkees)
+- LinkedIn: [LinkedIn](http://www.linkedin.com/in/adeyemi-olusola)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
