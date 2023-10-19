@@ -39,6 +39,7 @@ class DoctorsController < ApplicationController
       render json: @doctor, status: :accepted
     else
       render json: @doctor.errors, status: :unprocessable_entity
+    end
   end
 
   private
