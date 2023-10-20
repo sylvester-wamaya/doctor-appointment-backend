@@ -48,6 +48,14 @@
 - Deployment
 - API documentation
 
+## Kanban
+**Our team has 4 members**
+- Kanban before
+![kanban before](https://github.com/sylvester-wamaya/doctor-appointment-backend/assets/118696200/843a9a37-8813-44bb-a4f1-472eb34b23cc)
+- Kanban After
+![image](https://github.com/sylvester-wamaya/doctor-appointment-backend/assets/118696200/1cfc23f7-3ff6-4562-9b9a-19c4cc6f9143)
+
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
