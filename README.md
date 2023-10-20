@@ -23,6 +23,10 @@
 # 📖 Doctor Appointment Backend <a name="about-project"></a>
 
 **Doctor Appointment Backend** Is a ruby on rails backend for a react/redux front end app. This deployed app serves the endpoints for users to signup, login, logout, create a doctor, fetch all doctors, remove a doctor, create an appointment, fetch all appointments, and delete an appointment, all with authentication.
+
+##ERD
+![image](https://github.com/sylvester-wamaya/doctor-appointment-backend/assets/106195171/62b51198-efd8-4252-b773-018c01e62e51)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
